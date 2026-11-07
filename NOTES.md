@@ -10,10 +10,10 @@ Write your prediction before you open any code. Then search. In the last column,
 
 | Action | Search word | My prediction (file) | Files found and what each does |
 |---|---|---|---|
-| Prints "Not yet. Try again." | `Not yet` | TODO | TODO |
-| Decides that the second miss shows the answer | `reveal` | TODO | TODO |
-| Saves one attempt | `save_attempt` | TODO | TODO |
-| Refuses the 11th problem | `SetFull` | TODO | TODO |
+| Prints "Not yet. Try again." | `Not yet` | app.py | Found the app.py file, it is part of the user interface code and is a feedback message.  |
+| Decides that the second miss shows the answer | `reveal` | check.py | Found in the app.py and is part of the business logic handling, displays the hidden number after second attempt |
+| Saves one attempt | `save_attempt` | store.py | This file calls save_attempt() whenever an answer is submitted |
+| Refuses the 11th problem | `SetFull` | bank.py | This defines the exception and contains the class that is responsible for preventing the 11th problem from being stored |
 
 Search command: `grep -rn "SEARCH WORD" --include=*.py .`
 

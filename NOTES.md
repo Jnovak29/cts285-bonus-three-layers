@@ -31,23 +31,33 @@ Why did no test need to change? Tests did not have to change becuase the changed
 
 ## Part 4. The rule in the real library [S2]
 
-The same 10-problem rule exists in the real library. Write the file and the function name. TODO
+The same 10-problem rule exists in the real library. Write the file and the function name. 
+File: dataman/bank.py
+Function add_problem()
 
 ## Part 5. The red test [S2]
 
-With the rule removed from the library, what did the screen show? TODO
+With the rule removed from the library, what did the screen show?
+it failed a pytest
 
-With the rule removed, which test failed? TODO
+With the rule removed, which test failed? 
+test/test_logic.py::test_eleventh_problem_is_refused
+
+
 
 ## Part 6. The data swap [S2]
 
-A real database would replace which file? TODO
+A real database would replace which file?
+The Json file dataman_store.json
 
-Which file holds the rules and does not change when the database changes? TODO
+Which file holds the rules and does not change when the database changes? 
+The Business Logic - logic.py
 
 ## Reflection [S2]
 
-Write 3 to 5 sentences. Pick one layer. Say what you changed in it. Say what stayed the same in the other two layers. TODO
+Write 3 to 5 sentences. Pick one layer. Say what you changed in it. Say what stayed the same in the other two layers.
+I modified the interface layer by changing the message shown when the user enters a incorrect answer. the only thing that was was affected is what the user sees
+displayed by the code. the logic later and data layer stayed the same.
 
 ## Beta feedback (optional)
 

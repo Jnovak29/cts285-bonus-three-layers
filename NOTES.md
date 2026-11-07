@@ -19,15 +19,15 @@ Search command: `grep -rn "SEARCH WORD" --include=*.py .`
 
 ## Part 2. What the program remembered [S1]
 
-After the restart, what did the program remember? TODO
+After the restart, what did the program remember? The attempt that I stopped at.
 
-Which file made that possible? TODO
+Which file made that possible? The Json File is what saved the data.
 
 ## Part 3. The interface change [S1]
 
-What did you change in `app.py`? TODO
+What did you change in `app.py`? Changed the "try again" output when answer is wrong to another output.
 
-Why did no test need to change? TODO
+Why did no test need to change? Tests did not have to change becuase the changed code was in the user interface and had no affect on logic or behavior.
 
 ## Part 4. The rule in the real library [S2]
 
